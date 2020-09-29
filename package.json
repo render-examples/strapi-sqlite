@@ -1,0 +1,37 @@
+{
+  "name": "strapi-sqlite",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "strapi": "3.1.6",
+    "strapi-admin": "3.1.6",
+    "strapi-utils": "3.1.6",
+    "strapi-plugin-content-type-builder": "3.1.6",
+    "strapi-plugin-content-manager": "3.1.6",
+    "strapi-plugin-users-permissions": "3.1.6",
+    "strapi-plugin-email": "3.1.6",
+    "strapi-plugin-upload": "3.1.6",
+    "strapi-connector-bookshelf": "3.1.6",
+    "knex": "<0.20.0",
+    "sqlite3": "latest"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "b4a9b934-98e8-401e-9f60-ad3319a3e359"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
