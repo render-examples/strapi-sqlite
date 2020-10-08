@@ -11,7 +11,7 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "strapi": "3.1.6",
+    "strapi": "3.2.1",
     "strapi-admin": "3.2.1",
     "strapi-utils": "3.2.1",
     "strapi-plugin-content-type-builder": "3.2.1",
