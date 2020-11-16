@@ -14,7 +14,7 @@ services:
       - key: NODE_VERSION
         value: 12.18.4
       - key: NODE_ENV
-        value: production
+        value: development
       - key: DATABASE_FILENAME
         value: /data/strapi.db
       - key: JWT_SECRET
