@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "works_categories",
+  "info": {
+    "name": "Work categories",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "projects": {
+      "via": "work_category",
+      "collection": "projects"
+    }
+  }
+}
