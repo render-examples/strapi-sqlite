@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cooperation-models",
+      "handler": "cooperation-models.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cooperation-models/count",
+      "handler": "cooperation-models.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cooperation-models/:id",
+      "handler": "cooperation-models.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cooperation-models",
+      "handler": "cooperation-models.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cooperation-models/:id",
+      "handler": "cooperation-models.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cooperation-models/:id",
+      "handler": "cooperation-models.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

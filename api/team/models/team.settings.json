@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "technologies",
+  "collectionName": "teams",
   "info": {
-    "name": "Technologies",
-    "description": ""
+    "name": "Team"
   },
   "options": {
     "increments": true,
@@ -14,11 +13,14 @@
     "Name": {
       "type": "string"
     },
-    "Type": {
+    "Surname": {
       "type": "string"
     },
-    "Description": {
-      "type": "text"
+    "Position": {
+      "type": "string"
+    },
+    "Photo_URL": {
+      "type": "string"
     }
   }
 }
