@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/technologies",
+      "handler": "technologies.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/technologies/count",
+      "handler": "technologies.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/technologies/:id",
+      "handler": "technologies.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/technologies",
+      "handler": "technologies.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/technologies/:id",
+      "handler": "technologies.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/technologies/:id",
+      "handler": "technologies.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
