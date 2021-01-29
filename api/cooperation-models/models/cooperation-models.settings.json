@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "technologies",
+  "collectionName": "cooperation_models",
   "info": {
-    "name": "Technologies",
-    "description": ""
+    "name": "Cooperation models"
   },
   "options": {
     "increments": true,
@@ -11,10 +10,7 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Name": {
-      "type": "string"
-    },
-    "Type": {
+    "Title": {
       "type": "string"
     },
     "Description": {
