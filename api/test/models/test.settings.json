@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "tests",
   "info": {
-    "name": "Post",
-    "description": ""
+    "name": "Test"
   },
   "options": {
     "increments": true,
@@ -11,15 +10,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Title": {
-      "type": "string"
-    },
-    "Content": {
-      "type": "text"
-    },
-    "Date": {
-      "type": "datetime"
-    },
     "Text": {
       "type": "richtext"
     }
