@@ -13,14 +13,9 @@
     "Name": {
       "type": "string"
     },
-    "Surname": {
-      "type": "string"
-    },
-    "Position": {
-      "type": "string"
-    },
-    "Photo_URL": {
-      "type": "string"
+    "employees": {
+      "via": "teams",
+      "collection": "employee"
     }
   }
 }
