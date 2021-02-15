@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { useStrapi, prefixFileUrlWithBackendUrl } from 'strapi-helper-plugin';
-import PropTypes from 'prop-types';
+import React, { useEffect, useState } from "react";
+import { useStrapi, prefixFileUrlWithBackendUrl } from "strapi-helper-plugin";
+import PropTypes from "prop-types";
 
 const MediaLib = ({ isOpen, onChange, onToggle }) => {
   const {
@@ -17,9 +17,9 @@ const MediaLib = ({ isOpen, onChange, onToggle }) => {
     }
   }, [isOpen]);
 
-  const Component = getComponent('media-library').Component;
+  const Component = getComponent("media-library").Component;
 
-  const handleInputChange = data => {
+  const handleInputChange = (data) => {
     if (data) {
       const { url } = data;
 
@@ -39,7 +39,7 @@ const MediaLib = ({ isOpen, onChange, onToggle }) => {
   if (Component && isDisplayed) {
     return (
       <Component
-        allowedTypes={['images', 'videos', 'files']}
+        allowedTypes={["images", "videos", "files"]}
         isOpen={isOpen}
         multiple={false}
         noNavigation

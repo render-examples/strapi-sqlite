@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import { isEmpty } from 'lodash';
-import { Button } from '@buffetjs/core';
-import { Label, InputDescription, InputErrors } from 'strapi-helper-plugin';
-import Editor from '../CKEditor';
-import MediaLib from '../MediaLib';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import { isEmpty } from "lodash";
+import { Button } from "@buffetjs/core";
+import { Label, InputDescription, InputErrors } from "strapi-helper-plugin";
+import Editor from "../CKEditor";
+import MediaLib from "../MediaLib";
 
 const Wysiwyg = ({
   inputDescription,
@@ -16,14 +16,18 @@ const Wysiwyg = ({
   value,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  let spacer = !isEmpty(inputDescription) ? <div style={{ height: '.4rem' }} /> : <div />;
+  let spacer = !isEmpty(inputDescription) ? (
+    <div style={{ height: ".4rem" }} />
+  ) : (
+    <div />
+  );
 
   if (!noErrorsDescription && !isEmpty(errors)) {
     spacer = <div />;
   }
 
-  const handleChange = data => {
-    if (data.mime.includes('image')) {
+  const handleChange = (data) => {
+    if (data.mime.includes("image")) {
       const imgTag = `<p><img src="${data.url}" caption="${data.caption}" alt="${data.alternativeText}"></img></p>`;
       const newValue = value ? `${value}${imgTag}` : imgTag;
 
@@ -33,14 +37,14 @@ const Wysiwyg = ({
     // Handle videos and other type of files by adding some code
   };
 
-  const handleToggle = () => setIsOpen(prev => !prev);
+  const handleToggle = () => setIsOpen((prev) => !prev);
 
   return (
     <div
       style={{
-        marginBottom: '1.6rem',
-        fontSize: '1.3rem',
-        fontFamily: 'Lato',
+        marginBottom: "1.6rem",
+        fontSize: "1.3rem",
+        fontFamily: "Lato",
       }}
     >
       <Label htmlFor={name} message={label} style={{ marginBottom: 10 }} />
@@ -52,11 +56,18 @@ const Wysiwyg = ({
       <Editor name={name} onChange={onChange} value={value} />
       <InputDescription
         message={inputDescription}
-        style={!isEmpty(inputDescription) ? { marginTop: '1.4rem' } : {}}
+        style={!isEmpty(inputDescription) ? { marginTop: "1.4rem" } : {}}
       />
-      <InputErrors errors={(!noErrorsDescription && errors) || []} name={name} />
+      <InputErrors
+        errors={(!noErrorsDescription && errors) || []}
+        name={name}
+      />
       {spacer}
-      <MediaLib onToggle={handleToggle} isOpen={isOpen} onChange={handleChange} />
+      <MediaLib
+        onToggle={handleToggle}
+        isOpen={isOpen}
+        onChange={handleChange}
+      />
     </div>
   );
 };
@@ -64,9 +75,9 @@ const Wysiwyg = ({
 Wysiwyg.defaultProps = {
   errors: [],
   inputDescription: null,
-  label: '',
+  label: "",
   noErrorsDescription: false,
-  value: '',
+  value: "",
 };
 
 Wysiwyg.propTypes = {
