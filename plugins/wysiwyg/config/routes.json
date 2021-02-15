@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "wysiwyg.index",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
