@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { CKEditor } from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-import styled from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import { CKEditor } from "@ckeditor/ckeditor5-react";
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   .ck-editor__main {
@@ -15,22 +15,22 @@ const Wrapper = styled.div`
 
 const configuration = {
   toolbar: [
-    'heading',
-    '|',
-    'bold',
-    'italic',
-    'link',
-    'bulletedList',
-    'numberedList',
-    '|',
-    'indent',
-    'outdent',
-    '|',
-    'blockQuote',
-    'insertTable',
-    'mediaEmbed',
-    'undo',
-    'redo',
+    "heading",
+    "|",
+    "bold",
+    "italic",
+    "link",
+    "bulletedList",
+    "numberedList",
+    "|",
+    "indent",
+    "outdent",
+    "|",
+    "blockQuote",
+    "insertTable",
+    "mediaEmbed",
+    "undo",
+    "redo",
   ],
 };
 

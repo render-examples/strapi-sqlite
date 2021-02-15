@@ -1,9 +1,10 @@
-import pluginPkg from '../../package.json';
-import Wysiwyg from './components/Wysiwyg';
-import pluginId from './pluginId';
+import pluginPkg from "../../package.json";
+import Wysiwyg from "./components/Wysiwyg";
+import pluginId from "./pluginId";
 
-export default strapi => {
-  const pluginDescription = pluginPkg.strapi.description || pluginPkg.description;
+export default (strapi) => {
+  const pluginDescription =
+    pluginPkg.strapi.description || pluginPkg.description;
 
   const plugin = {
     blockerComponent: null,
@@ -22,7 +23,7 @@ export default strapi => {
     trads: {},
   };
 
-  strapi.registerField({ type: 'wysiwyg', Component: Wysiwyg });
+  strapi.registerField({ type: "wysiwyg", Component: Wysiwyg });
 
   return strapi.registerPlugin(plugin);
 };
