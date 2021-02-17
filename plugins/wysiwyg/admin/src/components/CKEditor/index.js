@@ -31,6 +31,7 @@ const configuration = {
     "mediaEmbed",
     "undo",
     "redo",
+    "source",
   ],
 };
 
