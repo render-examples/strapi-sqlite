@@ -27,12 +27,9 @@
   "author": {
     "name": "A Strapi developer"
   },
-  "strapi": {
-    "uuid": "b4a9b934-98e8-401e-9f60-ad3319a3e359"
-  },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
     "npm": "^6.0.0"
   },
-  "license": "MIT"
+  "license": "none"
 }

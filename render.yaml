@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: strapi
+    name: vcgstrapi
     env: node
     plan: starter
     buildCommand: yarn install && yarn build
