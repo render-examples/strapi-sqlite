@@ -31,5 +31,9 @@
     "node": ">=10.16.0 <=14.x.x",
     "npm": "^6.0.0"
   },
-  "license": "none"
+  "license": "none",
+  "volta": {
+    "node": "14.17.0",
+    "yarn": "1.22.10"
+  }
 }
