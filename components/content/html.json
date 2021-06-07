@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_content_htmls",
+  "info": {
+    "name": "Html",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Content": {
+      "type": "text"
+    },
+    "shortTitle": {
+      "type": "string"
+    },
+    "regularTitle": {
+      "type": "string"
+    },
+    "longTitle": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_content_image_singles",
+  "info": {
+    "name": "ImageSingle",
+    "icon": "image"
+  },
+  "options": {},
+  "attributes": {
+    "Content": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

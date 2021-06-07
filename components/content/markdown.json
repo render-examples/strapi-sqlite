@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_content_markdowns",
+  "info": {
+    "name": "Markdown",
+    "icon": "file-signature"
+  },
+  "options": {},
+  "attributes": {
+    "Content": {
+      "type": "richtext"
+    }
+  }
+}

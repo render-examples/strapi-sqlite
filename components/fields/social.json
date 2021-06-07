@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_fields_socials",
+  "info": {
+    "name": "social",
+    "icon": "tags"
+  },
+  "options": {},
+  "attributes": {
+    "facebook": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "vitalscom": {
+      "type": "string"
+    },
+    "healthgrades": {
+      "type": "string"
+    }
+  }
+}

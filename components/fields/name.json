@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_content_names",
+  "info": {
+    "name": "Name",
+    "icon": "id-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "First": {
+      "type": "string"
+    },
+    "Last": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Suffix": {
+      "type": "string"
+    }
+  }
+}

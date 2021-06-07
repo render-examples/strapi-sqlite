@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_content_people",
+  "info": {
+    "name": "Person",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "person": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
