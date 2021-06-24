@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "homemains",
+  "info": {
+    "name": "homemain",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titleCenter": {
+      "type": "string"
+    },
+    "titleCenterDesc": {
+      "type": "text"
+    },
+    "titleLeft": {
+      "type": "string"
+    },
+    "titleLeftDesc": {
+      "type": "text"
+    },
+    "titleRight": {
+      "type": "string"
+    },
+    "titleRightDesc": {
+      "type": "text"
+    }
+  }
+}
