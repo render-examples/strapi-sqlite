@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_works_works",
+  "info": {
+    "name": "works",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

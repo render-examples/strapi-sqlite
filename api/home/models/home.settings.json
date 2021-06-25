@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homepage",
+  "info": {
+    "name": "Homepage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HomeMain": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homemain.home-main"
+    },
+    "works": {
+      "type": "component",
+      "repeatable": false,
+      "component": "works.works"
+    }
+  }
+}

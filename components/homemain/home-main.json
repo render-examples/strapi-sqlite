@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_homemain_home_mains",
+  "info": {
+    "name": "HomeMain",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "titleCenter": {
+      "type": "string"
+    },
+    "titleCenterDesc": {
+      "type": "text"
+    },
+    "titleLeft": {
+      "type": "string"
+    },
+    "titleLeftDesc": {
+      "type": "text"
+    },
+    "titleRight": {
+      "type": "string"
+    },
+    "titleRightDesc": {
+      "type": "text"
+    }
+  }
+}
