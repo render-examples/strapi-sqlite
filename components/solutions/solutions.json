@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_solutions_solutions",
+  "info": {
+    "name": "solutions",
+    "icon": "arrow-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "ourExpertise": {
+      "type": "component",
+      "repeatable": false,
+      "component": "our-expertise.our-expertise"
+    }
+  }
+}

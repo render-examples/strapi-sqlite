@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_contacts_contacts",
+  "info": {
+    "name": "contacts",
+    "icon": "arrow-left"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

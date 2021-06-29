@@ -21,6 +21,26 @@
       "type": "component",
       "repeatable": false,
       "component": "works.works"
+    },
+    "solutions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "solutions.solutions"
+    },
+    "technologies": {
+      "type": "component",
+      "repeatable": false,
+      "component": "technologies.technologies"
+    },
+    "company": {
+      "type": "component",
+      "repeatable": false,
+      "component": "company.company"
+    },
+    "contacts": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contacts.contacts"
     }
   }
 }

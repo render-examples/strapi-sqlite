@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_technologies_technologies",
+  "info": {
+    "name": "technologies",
+    "icon": "arrow-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
