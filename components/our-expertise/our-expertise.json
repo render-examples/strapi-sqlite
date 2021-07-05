@@ -15,6 +15,18 @@
     },
     "titleOneDesc": {
       "type": "text"
+    },
+    "titleTwo": {
+      "type": "string"
+    },
+    "titleTwoDesc": {
+      "type": "text"
+    },
+    "titleThree": {
+      "type": "string"
+    },
+    "titleThreeDesc": {
+      "type": "text"
     }
   }
 }

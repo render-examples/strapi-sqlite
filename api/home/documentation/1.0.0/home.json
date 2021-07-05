@@ -594,6 +594,18 @@
                   },
                   "titleOneDesc": {
                     "type": "string"
+                  },
+                  "titleTwo": {
+                    "type": "string"
+                  },
+                  "titleTwoDesc": {
+                    "type": "string"
+                  },
+                  "titleThree": {
+                    "type": "string"
+                  },
+                  "titleThreeDesc": {
+                    "type": "string"
                   }
                 }
               }
@@ -720,6 +732,18 @@
                     "type": "string"
                   },
                   "titleOneDesc": {
+                    "type": "string"
+                  },
+                  "titleTwo": {
+                    "type": "string"
+                  },
+                  "titleTwoDesc": {
+                    "type": "string"
+                  },
+                  "titleThree": {
+                    "type": "string"
+                  },
+                  "titleThreeDesc": {
                     "type": "string"
                   }
                 }
