@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zaiavkis",
+  "info": {
+    "name": "zaiavki",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "tel": {
+      "type": "string"
+    },
+    "budget": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    }
+  }
+}

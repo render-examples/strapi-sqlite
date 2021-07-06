@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/zaiavkis",
+      "handler": "zaiavki.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/zaiavkis/count",
+      "handler": "zaiavki.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/zaiavkis/:id",
+      "handler": "zaiavki.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/zaiavkis",
+      "handler": "zaiavki.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/zaiavkis/:id",
+      "handler": "zaiavki.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/zaiavkis/:id",
+      "handler": "zaiavki.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
