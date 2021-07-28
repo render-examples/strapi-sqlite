@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_works_works",
+  "collectionName": "components_company_description_elements",
   "info": {
-    "name": "works",
-    "icon": "arrow-alt-circle-right",
+    "name": "DescriptionElement",
+    "icon": "ad",
     "description": ""
   },
   "options": {},

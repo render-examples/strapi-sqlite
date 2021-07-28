@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_company_developers",
+  "info": {
+    "name": "developer",
+    "icon": "bath"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "img": {
+      "type": "string"
+    }
+  }
+}

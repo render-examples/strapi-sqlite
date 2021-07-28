@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "works",
+  "info": {
+    "name": "Works",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "carousel": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.some"
+    }
+  }
+}

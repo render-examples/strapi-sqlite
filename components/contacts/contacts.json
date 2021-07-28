@@ -2,12 +2,16 @@
   "collectionName": "components_contacts_contacts",
   "info": {
     "name": "contacts",
-    "icon": "arrow-left"
+    "icon": "arrow-left",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "fields": {
+      "type": "json"
     }
   }
 }

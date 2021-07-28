@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_company_element_with_developers",
+  "info": {
+    "name": "ElementWithDevelopers",
+    "icon": "balance-scale-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "developer": {
+      "type": "component",
+      "repeatable": true,
+      "component": "company.developer"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "technologies",
+  "info": {
+    "name": "Technologies"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "technologieCircle": {
+      "type": "component",
+      "repeatable": true,
+      "component": "technologies.technologie-circle"
+    }
+  }
+}

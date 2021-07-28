@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_solutions_element_with_graphs",
+  "info": {
+    "name": "ElementWithGraph",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "graphItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solutions.graph-item"
+    }
+  }
+}

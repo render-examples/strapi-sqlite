@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_works_languages",
+  "info": {
+    "name": "languages",
+    "icon": "anchor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "languageName": {
+      "type": "string"
+    }
+  }
+}

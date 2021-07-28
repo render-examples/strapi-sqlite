@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "contactuses",
+  "info": {
+    "name": "Contact us",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "contactUsForm": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contacts.contact-us-form"
+    }
+  }
+}

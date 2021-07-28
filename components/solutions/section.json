@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_works_works",
+  "collectionName": "components_solutions_sections",
   "info": {
-    "name": "works",
-    "icon": "arrow-alt-circle-right",
+    "name": "section",
+    "icon": "atom",
     "description": ""
   },
   "options": {},

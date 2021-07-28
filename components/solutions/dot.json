@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_solutions_dots",
+  "info": {
+    "name": "dot",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

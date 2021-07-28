@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_technologies_tool_imgs",
+  "info": {
+    "name": "toolImg",
+    "icon": "eye-slash"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "type": "string"
+    }
+  }
+}
