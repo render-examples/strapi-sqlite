@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_solutions_element_with_dots",
+  "info": {
+    "name": "ElementWithDots",
+    "icon": "angry",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "dot": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solutions.dot"
+    },
+    "separator": {
+      "type": "boolean"
+    }
+  }
+}

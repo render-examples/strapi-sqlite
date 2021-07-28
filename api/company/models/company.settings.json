@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "companies",
+  "info": {
+    "name": "Company",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "DescriptionElement": {
+      "type": "component",
+      "repeatable": true,
+      "component": "company.description-element"
+    },
+    "ElementWithSections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solutions.element-with-sections"
+    },
+    "ElementWithDevelopers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "company.element-with-developers"
+    }
+  }
+}

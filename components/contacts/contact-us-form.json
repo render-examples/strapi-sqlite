@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_contacts_contact_us_forms",
+  "info": {
+    "name": "contactUsForm",
+    "icon": "battery-empty",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "fieldType": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.field-type"
+    },
+    "submitButtonText": {
+      "type": "string"
+    },
+    "facebookLink": {
+      "type": "string"
+    },
+    "instagramLink": {
+      "type": "string"
+    },
+    "linkedinLink": {
+      "type": "string"
+    }
+  }
+}

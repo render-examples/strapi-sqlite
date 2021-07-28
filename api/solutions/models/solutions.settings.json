@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "solutions",
+  "info": {
+    "name": "Solutions",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ElementWithDots": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solutions.element-with-dots"
+    },
+    "ElementWithSections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solutions.element-with-sections"
+    },
+    "ElementWithGraph": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solutions.element-with-graph"
+    }
+  }
+}

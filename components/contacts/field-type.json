@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_contacts_field_types",
+  "info": {
+    "name": "fieldType",
+    "icon": "bacon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "placeholder": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "allowNull": {
+      "type": "boolean"
+    }
+  }
+}

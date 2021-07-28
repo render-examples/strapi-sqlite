@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_solutions_graph_items",
+  "info": {
+    "name": "graphItem",
+    "icon": "arrow-down"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

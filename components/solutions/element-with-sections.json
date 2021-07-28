@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_solutions_element_with_sections",
+  "info": {
+    "name": "ElementWithSections",
+    "icon": "arrows-alt-v"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "section": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solutions.section"
+    }
+  }
+}

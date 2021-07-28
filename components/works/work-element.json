@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_works_work_elements",
+  "info": {
+    "name": "workElement",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "languages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.languages"
+    }
+  }
+}

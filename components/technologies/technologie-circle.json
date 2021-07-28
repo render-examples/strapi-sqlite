@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_technologies_technologie_circles",
+  "info": {
+    "name": "technologieCircle",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "toolImg": {
+      "type": "component",
+      "repeatable": true,
+      "component": "technologies.tool-img"
+    }
+  }
+}

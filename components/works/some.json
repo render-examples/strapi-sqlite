@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_works_somes",
+  "info": {
+    "name": "Work",
+    "icon": "arrows-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "img": {
+      "type": "string"
+    },
+    "languages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.languages"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

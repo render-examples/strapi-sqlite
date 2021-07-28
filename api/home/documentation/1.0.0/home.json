@@ -562,6 +562,12 @@
               },
               "title": {
                 "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "img": {
+                "type": "string"
               }
             }
           },
@@ -650,6 +656,9 @@
               },
               "title": {
                 "type": "string"
+              },
+              "fields": {
+                "type": "object"
               }
             }
           },
@@ -701,6 +710,12 @@
               },
               "title": {
                 "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "img": {
+                "type": "string"
               }
             }
           },
@@ -789,6 +804,9 @@
               },
               "title": {
                 "type": "string"
+              },
+              "fields": {
+                "type": "object"
               }
             }
           },
