@@ -13,7 +13,7 @@
     "description": {
       "type": "text"
     },
-    "dot": {
+    "dots": {
       "type": "component",
       "repeatable": true,
       "component": "solutions.dot"

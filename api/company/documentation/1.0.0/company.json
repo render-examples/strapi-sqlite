@@ -318,7 +318,7 @@
           "id": {
             "type": "string"
           },
-          "DescriptionElement": {
+          "descriptionElements": {
             "type": "array",
             "items": {
               "type": "object",
@@ -341,7 +341,7 @@
               }
             }
           },
-          "ElementWithSections": {
+          "elementsWithSections": {
             "type": "array",
             "items": {
               "type": "object",
@@ -358,7 +358,7 @@
                 "description": {
                   "type": "string"
                 },
-                "section": {
+                "sections": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -384,7 +384,7 @@
               }
             }
           },
-          "ElementWithDevelopers": {
+          "elementsWithDevelopers": {
             "type": "array",
             "items": {
               "type": "object",
@@ -401,7 +401,7 @@
                 "description": {
                   "type": "string"
                 },
-                "developer": {
+                "developers": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -435,7 +435,7 @@
       },
       "NewCompany": {
         "properties": {
-          "DescriptionElement": {
+          "descriptionElements": {
             "type": "array",
             "items": {
               "type": "object",
@@ -458,7 +458,7 @@
               }
             }
           },
-          "ElementWithSections": {
+          "elementsWithSections": {
             "type": "array",
             "items": {
               "type": "object",
@@ -475,7 +475,7 @@
                 "description": {
                   "type": "string"
                 },
-                "section": {
+                "sections": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -501,7 +501,7 @@
               }
             }
           },
-          "ElementWithDevelopers": {
+          "elementsWithDevelopers": {
             "type": "array",
             "items": {
               "type": "object",
@@ -518,7 +518,7 @@
                 "description": {
                   "type": "string"
                 },
-                "developer": {
+                "developers": {
                   "type": "array",
                   "items": {
                     "type": "object",

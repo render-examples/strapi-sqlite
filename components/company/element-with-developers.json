@@ -2,7 +2,8 @@
   "collectionName": "components_company_element_with_developers",
   "info": {
     "name": "ElementWithDevelopers",
-    "icon": "balance-scale-right"
+    "icon": "balance-scale-right",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -12,7 +13,7 @@
     "description": {
       "type": "text"
     },
-    "developer": {
+    "developers": {
       "type": "component",
       "repeatable": true,
       "component": "company.developer"

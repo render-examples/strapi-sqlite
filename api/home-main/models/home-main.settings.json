@@ -12,22 +12,22 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "TitleCenter": {
+    "titleCenter": {
       "type": "string"
     },
-    "TitleCenterDesc": {
+    "titleCenterDesc": {
       "type": "text"
     },
-    "TitleLeft": {
+    "titleLeft": {
       "type": "string"
     },
-    "TitleLeftDesc": {
+    "titleLeftDesc": {
       "type": "text"
     },
-    "TitleRight": {
+    "titleRight": {
       "type": "string"
     },
-    "TitleRightDesc": {
+    "titleRightDesc": {
       "type": "text"
     }
   }

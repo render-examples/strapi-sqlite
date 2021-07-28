@@ -20,6 +20,14 @@
     },
     "description": {
       "type": "richtext"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.list"
+    },
+    "workSlug": {
+      "type": "string"
     }
   }
 }

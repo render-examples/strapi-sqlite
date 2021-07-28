@@ -7,21 +7,22 @@
   },
   "options": {},
   "attributes": {
-    "fieldType": {
-      "type": "component",
-      "repeatable": true,
-      "component": "contacts.field-type"
-    },
     "submitButtonText": {
       "type": "string"
     },
-    "facebookLink": {
+    "namePlaceholder": {
       "type": "string"
     },
-    "instagramLink": {
+    "phoneNumberPlaceholder": {
       "type": "string"
     },
-    "linkedinLink": {
+    "emailPlaceholder": {
+      "type": "string"
+    },
+    "budgetPlaceholder": {
+      "type": "string"
+    },
+    "messagePlaceholder": {
       "type": "string"
     }
   }

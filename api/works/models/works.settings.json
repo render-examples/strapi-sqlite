@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "carousel": {
+    "works": {
       "type": "component",
       "repeatable": true,
       "component": "works.some"

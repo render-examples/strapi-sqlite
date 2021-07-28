@@ -334,23 +334,6 @@
                 },
                 "description": {
                   "type": "string"
-                },
-                "toolImg": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "required": [
-                      "id"
-                    ],
-                    "properties": {
-                      "id": {
-                        "type": "string"
-                      },
-                      "img": {
-                        "type": "string"
-                      }
-                    }
-                  }
                 }
               }
             }
@@ -379,23 +362,6 @@
                 },
                 "description": {
                   "type": "string"
-                },
-                "toolImg": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "required": [
-                      "id"
-                    ],
-                    "properties": {
-                      "id": {
-                        "type": "string"
-                      },
-                      "img": {
-                        "type": "string"
-                      }
-                    }
-                  }
                 }
               }
             }

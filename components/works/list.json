@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_works_lists",
+  "info": {
+    "name": "list",
+    "icon": "bed"
+  },
+  "options": {},
+  "attributes": {
+    "listElementText": {
+      "type": "text"
+    }
+  }
+}

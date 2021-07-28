@@ -12,17 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "DescriptionElement": {
+    "descriptionElements": {
       "type": "component",
       "repeatable": true,
       "component": "company.description-element"
     },
-    "ElementWithSections": {
+    "elementsWithSections": {
       "type": "component",
       "repeatable": true,
       "component": "solutions.element-with-sections"
     },
-    "ElementWithDevelopers": {
+    "elementsWithDevelopers": {
       "type": "component",
       "repeatable": true,
       "component": "company.element-with-developers"

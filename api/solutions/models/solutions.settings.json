@@ -12,17 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "ElementWithDots": {
+    "elementsWithDots": {
       "type": "component",
       "repeatable": true,
       "component": "solutions.element-with-dots"
     },
-    "ElementWithSections": {
+    "elementsWithSections": {
       "type": "component",
       "repeatable": true,
       "component": "solutions.element-with-sections"
     },
-    "ElementWithGraph": {
+    "elementsWithGraph": {
       "type": "component",
       "repeatable": true,
       "component": "solutions.element-with-graph"
