@@ -323,22 +323,22 @@
           "id": {
             "type": "string"
           },
-          "TitleCenter": {
+          "titleCenter": {
             "type": "string"
           },
-          "TitleCenterDesc": {
+          "titleCenterDesc": {
             "type": "string"
           },
-          "TitleLeft": {
+          "titleLeft": {
             "type": "string"
           },
-          "TitleLeftDesc": {
+          "titleLeftDesc": {
             "type": "string"
           },
-          "TitleRight": {
+          "titleRight": {
             "type": "string"
           },
-          "TitleRightDesc": {
+          "titleRightDesc": {
             "type": "string"
           },
           "published_at": {
@@ -349,22 +349,22 @@
       },
       "NewHome-main": {
         "properties": {
-          "TitleCenter": {
+          "titleCenter": {
             "type": "string"
           },
-          "TitleCenterDesc": {
+          "titleCenterDesc": {
             "type": "string"
           },
-          "TitleLeft": {
+          "titleLeft": {
             "type": "string"
           },
-          "TitleLeftDesc": {
+          "titleLeftDesc": {
             "type": "string"
           },
-          "TitleRight": {
+          "titleRight": {
             "type": "string"
           },
-          "TitleRightDesc": {
+          "titleRightDesc": {
             "type": "string"
           },
           "published_at": {

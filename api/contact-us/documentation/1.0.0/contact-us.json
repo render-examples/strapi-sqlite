@@ -335,42 +335,22 @@
               "id": {
                 "type": "string"
               },
-              "fieldType": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "placeholder": {
-                      "type": "string"
-                    },
-                    "type": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "allowNull": {
-                      "type": "boolean"
-                    }
-                  }
-                }
-              },
               "submitButtonText": {
                 "type": "string"
               },
-              "facebookLink": {
+              "namePlaceholder": {
                 "type": "string"
               },
-              "instagramLink": {
+              "phoneNumberPlaceholder": {
                 "type": "string"
               },
-              "linkedinLink": {
+              "emailPlaceholder": {
+                "type": "string"
+              },
+              "budgetPlaceholder": {
+                "type": "string"
+              },
+              "messagePlaceholder": {
                 "type": "string"
               }
             }
@@ -395,42 +375,22 @@
               "id": {
                 "type": "string"
               },
-              "fieldType": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "placeholder": {
-                      "type": "string"
-                    },
-                    "type": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "allowNull": {
-                      "type": "boolean"
-                    }
-                  }
-                }
-              },
               "submitButtonText": {
                 "type": "string"
               },
-              "facebookLink": {
+              "namePlaceholder": {
                 "type": "string"
               },
-              "instagramLink": {
+              "phoneNumberPlaceholder": {
                 "type": "string"
               },
-              "linkedinLink": {
+              "emailPlaceholder": {
+                "type": "string"
+              },
+              "budgetPlaceholder": {
+                "type": "string"
+              },
+              "messagePlaceholder": {
                 "type": "string"
               }
             }

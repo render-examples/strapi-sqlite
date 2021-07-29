@@ -318,7 +318,7 @@
           "id": {
             "type": "string"
           },
-          "ElementWithDots": {
+          "elementsWithDots": {
             "type": "array",
             "items": {
               "type": "object",
@@ -335,7 +335,7 @@
                 "description": {
                   "type": "string"
                 },
-                "dot": {
+                "dots": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -361,7 +361,7 @@
               }
             }
           },
-          "ElementWithSections": {
+          "elementsWithSections": {
             "type": "array",
             "items": {
               "type": "object",
@@ -378,7 +378,7 @@
                 "description": {
                   "type": "string"
                 },
-                "section": {
+                "sections": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -404,7 +404,7 @@
               }
             }
           },
-          "ElementWithGraph": {
+          "elementsWithGraph": {
             "type": "array",
             "items": {
               "type": "object",
@@ -421,7 +421,7 @@
                 "description": {
                   "type": "string"
                 },
-                "graphItem": {
+                "graphItems": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -437,6 +437,9 @@
                       },
                       "description": {
                         "type": "string"
+                      },
+                      "height": {
+                        "type": "integer"
                       }
                     }
                   }
@@ -452,7 +455,7 @@
       },
       "NewSolutions": {
         "properties": {
-          "ElementWithDots": {
+          "elementsWithDots": {
             "type": "array",
             "items": {
               "type": "object",
@@ -469,7 +472,7 @@
                 "description": {
                   "type": "string"
                 },
-                "dot": {
+                "dots": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -495,7 +498,7 @@
               }
             }
           },
-          "ElementWithSections": {
+          "elementsWithSections": {
             "type": "array",
             "items": {
               "type": "object",
@@ -512,7 +515,7 @@
                 "description": {
                   "type": "string"
                 },
-                "section": {
+                "sections": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -538,7 +541,7 @@
               }
             }
           },
-          "ElementWithGraph": {
+          "elementsWithGraph": {
             "type": "array",
             "items": {
               "type": "object",
@@ -555,7 +558,7 @@
                 "description": {
                   "type": "string"
                 },
-                "graphItem": {
+                "graphItems": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -571,6 +574,9 @@
                       },
                       "description": {
                         "type": "string"
+                      },
+                      "height": {
+                        "type": "integer"
                       }
                     }
                   }

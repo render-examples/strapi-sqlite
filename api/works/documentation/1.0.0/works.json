@@ -318,7 +318,7 @@
           "id": {
             "type": "string"
           },
-          "carousel": {
+          "works": {
             "type": "array",
             "items": {
               "type": "object",
@@ -353,6 +353,26 @@
                   }
                 },
                 "description": {
+                  "type": "string"
+                },
+                "list": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listElementText": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "workSlug": {
                   "type": "string"
                 }
               }
@@ -366,7 +386,7 @@
       },
       "NewWorks": {
         "properties": {
-          "carousel": {
+          "works": {
             "type": "array",
             "items": {
               "type": "object",
@@ -401,6 +421,26 @@
                   }
                 },
                 "description": {
+                  "type": "string"
+                },
+                "list": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listElementText": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "workSlug": {
                   "type": "string"
                 }
               }

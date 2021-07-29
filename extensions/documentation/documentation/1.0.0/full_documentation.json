@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/27/2021 5:57:56 PM"
+    "x-generation-date": "07/28/2021 6:08:58 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5156,7 +5156,7 @@
           "id": {
             "type": "string"
           },
-          "DescriptionElement": {
+          "descriptionElements": {
             "type": "array",
             "items": {
               "type": "object",
@@ -5179,7 +5179,7 @@
               }
             }
           },
-          "ElementWithSections": {
+          "elementsWithSections": {
             "type": "array",
             "items": {
               "type": "object",
@@ -5196,7 +5196,7 @@
                 "description": {
                   "type": "string"
                 },
-                "section": {
+                "sections": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -5222,7 +5222,7 @@
               }
             }
           },
-          "ElementWithDevelopers": {
+          "elementsWithDevelopers": {
             "type": "array",
             "items": {
               "type": "object",
@@ -5239,7 +5239,7 @@
                 "description": {
                   "type": "string"
                 },
-                "developer": {
+                "developers": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -5273,7 +5273,7 @@
       },
       "NewCompany": {
         "properties": {
-          "DescriptionElement": {
+          "descriptionElements": {
             "type": "array",
             "items": {
               "type": "object",
@@ -5296,7 +5296,7 @@
               }
             }
           },
-          "ElementWithSections": {
+          "elementsWithSections": {
             "type": "array",
             "items": {
               "type": "object",
@@ -5313,7 +5313,7 @@
                 "description": {
                   "type": "string"
                 },
-                "section": {
+                "sections": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -5339,7 +5339,7 @@
               }
             }
           },
-          "ElementWithDevelopers": {
+          "elementsWithDevelopers": {
             "type": "array",
             "items": {
               "type": "object",
@@ -5356,7 +5356,7 @@
                 "description": {
                   "type": "string"
                 },
-                "developer": {
+                "developers": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -5414,42 +5414,22 @@
               "id": {
                 "type": "string"
               },
-              "fieldType": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "placeholder": {
-                      "type": "string"
-                    },
-                    "type": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "allowNull": {
-                      "type": "boolean"
-                    }
-                  }
-                }
-              },
               "submitButtonText": {
                 "type": "string"
               },
-              "facebookLink": {
+              "namePlaceholder": {
                 "type": "string"
               },
-              "instagramLink": {
+              "phoneNumberPlaceholder": {
                 "type": "string"
               },
-              "linkedinLink": {
+              "emailPlaceholder": {
+                "type": "string"
+              },
+              "budgetPlaceholder": {
+                "type": "string"
+              },
+              "messagePlaceholder": {
                 "type": "string"
               }
             }
@@ -5474,42 +5454,22 @@
               "id": {
                 "type": "string"
               },
-              "fieldType": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "placeholder": {
-                      "type": "string"
-                    },
-                    "type": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "allowNull": {
-                      "type": "boolean"
-                    }
-                  }
-                }
-              },
               "submitButtonText": {
                 "type": "string"
               },
-              "facebookLink": {
+              "namePlaceholder": {
                 "type": "string"
               },
-              "instagramLink": {
+              "phoneNumberPlaceholder": {
                 "type": "string"
               },
-              "linkedinLink": {
+              "emailPlaceholder": {
+                "type": "string"
+              },
+              "budgetPlaceholder": {
+                "type": "string"
+              },
+              "messagePlaceholder": {
                 "type": "string"
               }
             }
@@ -5534,22 +5494,22 @@
           "id": {
             "type": "string"
           },
-          "TitleCenter": {
+          "titleCenter": {
             "type": "string"
           },
-          "TitleCenterDesc": {
+          "titleCenterDesc": {
             "type": "string"
           },
-          "TitleLeft": {
+          "titleLeft": {
             "type": "string"
           },
-          "TitleLeftDesc": {
+          "titleLeftDesc": {
             "type": "string"
           },
-          "TitleRight": {
+          "titleRight": {
             "type": "string"
           },
-          "TitleRightDesc": {
+          "titleRightDesc": {
             "type": "string"
           },
           "published_at": {
@@ -5560,22 +5520,22 @@
       },
       "NewHome-main": {
         "properties": {
-          "TitleCenter": {
+          "titleCenter": {
             "type": "string"
           },
-          "TitleCenterDesc": {
+          "titleCenterDesc": {
             "type": "string"
           },
-          "TitleLeft": {
+          "titleLeft": {
             "type": "string"
           },
-          "TitleLeftDesc": {
+          "titleLeftDesc": {
             "type": "string"
           },
-          "TitleRight": {
+          "titleRight": {
             "type": "string"
           },
-          "TitleRightDesc": {
+          "titleRightDesc": {
             "type": "string"
           },
           "published_at": {
@@ -5906,7 +5866,7 @@
           "id": {
             "type": "string"
           },
-          "ElementWithDots": {
+          "elementsWithDots": {
             "type": "array",
             "items": {
               "type": "object",
@@ -5923,7 +5883,7 @@
                 "description": {
                   "type": "string"
                 },
-                "dot": {
+                "dots": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -5949,7 +5909,7 @@
               }
             }
           },
-          "ElementWithSections": {
+          "elementsWithSections": {
             "type": "array",
             "items": {
               "type": "object",
@@ -5966,7 +5926,7 @@
                 "description": {
                   "type": "string"
                 },
-                "section": {
+                "sections": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -5992,7 +5952,7 @@
               }
             }
           },
-          "ElementWithGraph": {
+          "elementsWithGraph": {
             "type": "array",
             "items": {
               "type": "object",
@@ -6009,7 +5969,7 @@
                 "description": {
                   "type": "string"
                 },
-                "graphItem": {
+                "graphItems": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -6025,6 +5985,9 @@
                       },
                       "description": {
                         "type": "string"
+                      },
+                      "height": {
+                        "type": "integer"
                       }
                     }
                   }
@@ -6040,7 +6003,7 @@
       },
       "NewSolutions": {
         "properties": {
-          "ElementWithDots": {
+          "elementsWithDots": {
             "type": "array",
             "items": {
               "type": "object",
@@ -6057,7 +6020,7 @@
                 "description": {
                   "type": "string"
                 },
-                "dot": {
+                "dots": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -6083,7 +6046,7 @@
               }
             }
           },
-          "ElementWithSections": {
+          "elementsWithSections": {
             "type": "array",
             "items": {
               "type": "object",
@@ -6100,7 +6063,7 @@
                 "description": {
                   "type": "string"
                 },
-                "section": {
+                "sections": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -6126,7 +6089,7 @@
               }
             }
           },
-          "ElementWithGraph": {
+          "elementsWithGraph": {
             "type": "array",
             "items": {
               "type": "object",
@@ -6143,7 +6106,7 @@
                 "description": {
                   "type": "string"
                 },
-                "graphItem": {
+                "graphItems": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -6159,6 +6122,9 @@
                       },
                       "description": {
                         "type": "string"
+                      },
+                      "height": {
+                        "type": "integer"
                       }
                     }
                   }
@@ -6202,23 +6168,6 @@
                 },
                 "description": {
                   "type": "string"
-                },
-                "toolImg": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "required": [
-                      "id"
-                    ],
-                    "properties": {
-                      "id": {
-                        "type": "string"
-                      },
-                      "img": {
-                        "type": "string"
-                      }
-                    }
-                  }
                 }
               }
             }
@@ -6247,23 +6196,6 @@
                 },
                 "description": {
                   "type": "string"
-                },
-                "toolImg": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "required": [
-                      "id"
-                    ],
-                    "properties": {
-                      "id": {
-                        "type": "string"
-                      },
-                      "img": {
-                        "type": "string"
-                      }
-                    }
-                  }
                 }
               }
             }
@@ -6288,7 +6220,7 @@
           "id": {
             "type": "string"
           },
-          "carousel": {
+          "works": {
             "type": "array",
             "items": {
               "type": "object",
@@ -6323,6 +6255,26 @@
                   }
                 },
                 "description": {
+                  "type": "string"
+                },
+                "list": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listElementText": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "workSlug": {
                   "type": "string"
                 }
               }
@@ -6336,7 +6288,7 @@
       },
       "NewWorks": {
         "properties": {
-          "carousel": {
+          "works": {
             "type": "array",
             "items": {
               "type": "object",
@@ -6371,6 +6323,26 @@
                   }
                 },
                 "description": {
+                  "type": "string"
+                },
+                "list": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listElementText": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "workSlug": {
                   "type": "string"
                 }
               }
