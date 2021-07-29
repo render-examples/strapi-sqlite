@@ -1,4 +1,3 @@
-// const toEmail = process.env.TOEMAIL;
 const emailTo = process.env.NEXT_PUBLIC_TOEMAIL;
 
 const { parseMultipartData, sanitizeEntity } = require('strapi-utils');
