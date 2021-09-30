@@ -14,7 +14,7 @@ module.exports = {
     strapi.services.sendmail.send(emailTo, emailTo, 'New request', `
       Name: ${entity.name}
       Email: ${entity.email}
-      Phone: ${entity.phone}
+      Phone: ${entity.tel}
       Budget: ${entity.budget}
       Message: ${entity.message}
     `);
