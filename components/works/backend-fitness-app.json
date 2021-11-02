@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_works_backend_fitness_apps",
+  "info": {
+    "name": "backendFitnessApp",
+    "icon": "arrows-alt-h"
+  },
+  "options": {},
+  "attributes": {
+    "item1": {
+      "type": "string"
+    },
+    "item2": {
+      "type": "string"
+    },
+    "item3": {
+      "type": "string"
+    },
+    "item4": {
+      "type": "string"
+    },
+    "item5": {
+      "type": "string"
+    },
+    "item6": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hoys": {
+      "type": "component",
+      "repeatable": false,
+      "component": "works.hoys"
+    },
+    "foody": {
+      "type": "component",
+      "repeatable": false,
+      "component": "works.foody"
+    },
+    "insuranceMarketplace": {
+      "type": "component",
+      "repeatable": false,
+      "component": "works.insurance-marketplace"
+    },
+    "postKino": {
+      "type": "component",
+      "repeatable": false,
+      "component": "works.post-kino"
+    },
+    "fitnessApp": {
+      "type": "component",
+      "repeatable": false,
+      "component": "works.fitness-app"
+    },
+    "lingo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "works.lingo"
+    },
+    "kkat": {
+      "type": "component",
+      "repeatable": false,
+      "component": "works.kkat"
+    }
+  }
+}

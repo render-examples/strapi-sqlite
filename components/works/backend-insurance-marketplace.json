@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_works_backend_insurance_marketplaces",
+  "info": {
+    "name": "backendInsuranceMarketplace",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "item1": {
+      "type": "string"
+    },
+    "item2": {
+      "type": "string"
+    },
+    "item3": {
+      "type": "string"
+    }
+  }
+}

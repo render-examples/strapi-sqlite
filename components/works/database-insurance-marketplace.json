@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_works_database_insurance_marketplaces",
+  "info": {
+    "name": "databaseInsuranceMarketplace",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "item1": {
+      "type": "string"
+    }
+  }
+}

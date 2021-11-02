@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_works_insurance_marketplaces",
+  "info": {
+    "name": "insuranceMarketplace",
+    "icon": "arrow-circle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "solutionsInsuranceMarketplace": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.solutions-insurance-marketplace"
+    },
+    "titleTechInsuranceMarketplace": {
+      "type": "string"
+    },
+    "backendInsuranceMarketplace": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.backend-insurance-marketplace"
+    },
+    "frontendInsuranceMarketplace": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.frontend-insurance-marketplace"
+    },
+    "databaseInsuranceMarketplace": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.database-insurance-marketplace"
+    }
+  }
+}

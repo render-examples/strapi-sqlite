@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_works_frontend_fitness_apps",
+  "info": {
+    "name": "frontendFitnessApp",
+    "icon": "assistive-listening-systems"
+  },
+  "options": {},
+  "attributes": {
+    "item1": {
+      "type": "string"
+    },
+    "item2": {
+      "type": "string"
+    },
+    "item3": {
+      "type": "string"
+    },
+    "item4": {
+      "type": "string"
+    }
+  }
+}

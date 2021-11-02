@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_works_hoys",
+  "info": {
+    "name": "hoys",
+    "icon": "angle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "solutionsHoys": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.solutions"
+    },
+    "titleTech": {
+      "type": "string"
+    },
+    "backendHoys": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.backend"
+    },
+    "frontendHoys": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.frontend"
+    },
+    "databaseHoys": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.database"
+    }
+  }
+}

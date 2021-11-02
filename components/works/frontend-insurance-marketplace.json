@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_works_frontend_insurance_marketplaces",
+  "info": {
+    "name": "frontendInsuranceMarketplace",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "item1": {
+      "type": "string"
+    },
+    "item2": {
+      "type": "string"
+    },
+    "item3": {
+      "type": "string"
+    }
+  }
+}

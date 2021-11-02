@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_works_frontend_foodies",
+  "info": {
+    "name": "frontendFoody",
+    "icon": "arrow-alt-circle-up"
+  },
+  "options": {},
+  "attributes": {
+    "item1": {
+      "type": "string"
+    },
+    "item2": {
+      "type": "string"
+    },
+    "item3": {
+      "type": "string"
+    },
+    "item4": {
+      "type": "string"
+    }
+  }
+}

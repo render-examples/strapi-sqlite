@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_works_foodies",
+  "info": {
+    "name": "foody",
+    "icon": "angle-double-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle1": {
+      "type": "string"
+    },
+    "subtitle2": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "solutionsFoody": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.solutions-foody"
+    },
+    "titleTechFoody": {
+      "type": "string"
+    },
+    "backendFoody": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.backend-foody"
+    },
+    "frontendFoody": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.frontend-foody"
+    },
+    "databaseFoody": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.database-foody"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_works_solutions_foodies",
+  "info": {
+    "name": "solutionsFoody",
+    "icon": "arrow-alt-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "item1": {
+      "type": "string"
+    },
+    "item2": {
+      "type": "string"
+    },
+    "item3": {
+      "type": "string"
+    },
+    "item4": {
+      "type": "string"
+    },
+    "item5": {
+      "type": "string"
+    }
+  }
+}

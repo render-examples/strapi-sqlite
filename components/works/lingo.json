@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_works_lingos",
+  "info": {
+    "name": "lingo",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "backendLingo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.backend-lingo"
+    },
+    "frontendLingo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.frontend-lingo"
+    },
+    "titleTechLingo": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "databaseLingo": {
+      "type": "string"
+    },
+    "solutionsLingo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.solutions-lingo"
+    }
+  }
+}

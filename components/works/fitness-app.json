@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_works_fitness_apps",
+  "info": {
+    "name": "fitnessApp",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "titleTechFitnessApp": {
+      "type": "string"
+    },
+    "frontendFitnessApp": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.frontend-fitness-app"
+    },
+    "backendFitnessApp": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.backend-fitness-app"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "solutionsFitnessApp": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.solutions-fitness-app"
+    },
+    "databaseFitnessApp": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "industry": {
+      "type": "string"
+    }
+  }
+}

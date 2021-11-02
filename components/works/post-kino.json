@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_works_post_kinos",
+  "info": {
+    "name": "postKino",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "titleTechPostKino": {
+      "type": "string"
+    },
+    "frontendPostKino": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.frontend-post-kino"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "backendPostKino": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.backend-post-kino"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "solutionsPostKino": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.solutions-post-kino"
+    },
+    "databasePostKino": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "industry": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_works_kkats",
+  "info": {
+    "name": "kkat",
+    "icon": "award"
+  },
+  "options": {},
+  "attributes": {
+    "titleTechKkat": {
+      "type": "string"
+    },
+    "frontendKkat": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.frontend-kkat"
+    },
+    "backendKkat": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.backend-kkat"
+    },
+    "solutionsKkat": {
+      "type": "component",
+      "repeatable": true,
+      "component": "works.solutions-kkat"
+    },
+    "databaseKkat": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "industry": {
+      "type": "string"
+    }
+  }
+}

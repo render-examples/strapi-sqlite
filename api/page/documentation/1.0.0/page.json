@@ -1,0 +1,2122 @@
+{
+  "paths": {
+    "/pages": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Page"
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Page"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "post": {
+        "deprecated": false,
+        "description": "Create a new record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Page"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Page"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewPage"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pages/count": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "count": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Page"
+        ],
+        "parameters": []
+      }
+    },
+    "/pages/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Page"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Page"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Page"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Page"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewPage"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a record",
+        "responses": {
+          "200": {
+            "description": "deletes a single record based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Page"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Page": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "hoys": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "subtitle": {
+                "type": "string"
+              },
+              "platform": {
+                "type": "string"
+              },
+              "industry": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "solutionsHoys": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "titleTech": {
+                "type": "string"
+              },
+              "backendHoys": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    },
+                    "item5": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "frontendHoys": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "databaseHoys": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "foody": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "subtitle1": {
+                "type": "string"
+              },
+              "subtitle2": {
+                "type": "string"
+              },
+              "platform": {
+                "type": "string"
+              },
+              "industry": {
+                "type": "string"
+              },
+              "solutionsFoody": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    },
+                    "item5": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "titleTechFoody": {
+                "type": "string"
+              },
+              "backendFoody": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    },
+                    "item5": {
+                      "type": "string"
+                    },
+                    "item6": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "frontendFoody": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "databaseFoody": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "insuranceMarketplace": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "subtitle": {
+                "type": "string"
+              },
+              "platform": {
+                "type": "string"
+              },
+              "industry": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "solutionsInsuranceMarketplace": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    },
+                    "item5": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "titleTechInsuranceMarketplace": {
+                "type": "string"
+              },
+              "backendInsuranceMarketplace": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "frontendInsuranceMarketplace": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "databaseInsuranceMarketplace": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "postKino": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "titleTechPostKino": {
+                "type": "string"
+              },
+              "frontendPostKino": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "platform": {
+                "type": "string"
+              },
+              "backendPostKino": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "subtitle": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "solutionsPostKino": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "databasePostKino": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "industry": {
+                "type": "string"
+              }
+            }
+          },
+          "fitnessApp": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "titleTechFitnessApp": {
+                "type": "string"
+              },
+              "frontendFitnessApp": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "backendFitnessApp": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    },
+                    "item5": {
+                      "type": "string"
+                    },
+                    "item6": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "platform": {
+                "type": "string"
+              },
+              "solutionsFitnessApp": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "databaseFitnessApp": {
+                "type": "string"
+              },
+              "subtitle": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "industry": {
+                "type": "string"
+              }
+            }
+          },
+          "lingo": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "backendLingo": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    },
+                    "item5": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "frontendLingo": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "titleTechLingo": {
+                "type": "string"
+              },
+              "platform": {
+                "type": "string"
+              },
+              "subtitle": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "industry": {
+                "type": "string"
+              },
+              "databaseLingo": {
+                "type": "string"
+              },
+              "solutionsLingo": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "kkat": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "titleTechKkat": {
+                "type": "string"
+              },
+              "frontendKkat": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "backendKkat": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    },
+                    "item5": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "solutionsKkat": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "databaseKkat": {
+                "type": "string"
+              },
+              "platform": {
+                "type": "string"
+              },
+              "subtitle": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "industry": {
+                "type": "string"
+              }
+            }
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewPage": {
+        "properties": {
+          "hoys": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "subtitle": {
+                "type": "string"
+              },
+              "platform": {
+                "type": "string"
+              },
+              "industry": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "solutionsHoys": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "titleTech": {
+                "type": "string"
+              },
+              "backendHoys": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    },
+                    "item5": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "frontendHoys": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "databaseHoys": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "foody": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "subtitle1": {
+                "type": "string"
+              },
+              "subtitle2": {
+                "type": "string"
+              },
+              "platform": {
+                "type": "string"
+              },
+              "industry": {
+                "type": "string"
+              },
+              "solutionsFoody": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    },
+                    "item5": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "titleTechFoody": {
+                "type": "string"
+              },
+              "backendFoody": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    },
+                    "item5": {
+                      "type": "string"
+                    },
+                    "item6": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "frontendFoody": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "databaseFoody": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "insuranceMarketplace": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "subtitle": {
+                "type": "string"
+              },
+              "platform": {
+                "type": "string"
+              },
+              "industry": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "solutionsInsuranceMarketplace": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    },
+                    "item5": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "titleTechInsuranceMarketplace": {
+                "type": "string"
+              },
+              "backendInsuranceMarketplace": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "frontendInsuranceMarketplace": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "databaseInsuranceMarketplace": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "postKino": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "titleTechPostKino": {
+                "type": "string"
+              },
+              "frontendPostKino": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "platform": {
+                "type": "string"
+              },
+              "backendPostKino": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "subtitle": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "solutionsPostKino": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "databasePostKino": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "industry": {
+                "type": "string"
+              }
+            }
+          },
+          "fitnessApp": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "titleTechFitnessApp": {
+                "type": "string"
+              },
+              "frontendFitnessApp": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "backendFitnessApp": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    },
+                    "item5": {
+                      "type": "string"
+                    },
+                    "item6": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "platform": {
+                "type": "string"
+              },
+              "solutionsFitnessApp": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "databaseFitnessApp": {
+                "type": "string"
+              },
+              "subtitle": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "industry": {
+                "type": "string"
+              }
+            }
+          },
+          "lingo": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "backendLingo": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    },
+                    "item5": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "frontendLingo": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "titleTechLingo": {
+                "type": "string"
+              },
+              "platform": {
+                "type": "string"
+              },
+              "subtitle": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "industry": {
+                "type": "string"
+              },
+              "databaseLingo": {
+                "type": "string"
+              },
+              "solutionsLingo": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "kkat": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "titleTechKkat": {
+                "type": "string"
+              },
+              "frontendKkat": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "backendKkat": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    },
+                    "item3": {
+                      "type": "string"
+                    },
+                    "item4": {
+                      "type": "string"
+                    },
+                    "item5": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "solutionsKkat": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "item1": {
+                      "type": "string"
+                    },
+                    "item2": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "databaseKkat": {
+                "type": "string"
+              },
+              "platform": {
+                "type": "string"
+              },
+              "subtitle": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "industry": {
+                "type": "string"
+              }
+            }
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Page"
+    }
+  ]
+}

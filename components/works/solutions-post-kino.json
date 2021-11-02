@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_works_solutions_post_kinos",
+  "info": {
+    "name": "solutionsPostKino",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "item1": {
+      "type": "string"
+    },
+    "item2": {
+      "type": "string"
+    }
+  }
+}

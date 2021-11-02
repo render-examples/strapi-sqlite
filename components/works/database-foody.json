@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_works_database_foodies",
+  "info": {
+    "name": "databaseFoody",
+    "icon": "arrow-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "item1": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_works_solutions",
+  "info": {
+    "name": "solutions",
+    "icon": "angle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "item1": {
+      "type": "string"
+    },
+    "item2": {
+      "type": "string"
+    },
+    "item3": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_works_frontend_kkats",
+  "info": {
+    "name": "frontendKkat",
+    "icon": "backspace"
+  },
+  "options": {},
+  "attributes": {
+    "item1": {
+      "type": "string"
+    },
+    "item2": {
+      "type": "string"
+    },
+    "item3": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_works_solutions_kkats",
+  "info": {
+    "name": "solutionsKkat",
+    "icon": "baby"
+  },
+  "options": {},
+  "attributes": {
+    "item1": {
+      "type": "string"
+    },
+    "item2": {
+      "type": "string"
+    }
+  }
+}
