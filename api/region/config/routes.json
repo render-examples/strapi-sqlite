@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/region",
+      "handler": "region.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/region",
+      "handler": "region.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/region",
+      "handler": "region.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "currencies",
+  "info": {
+    "name": "currency"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "currency": {
+      "type": "json"
+    }
+  }
+}
