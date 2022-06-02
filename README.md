@@ -24,3 +24,13 @@ Fork this repo and click the button below to deploy.
 
 
 See the guide at https://render.com/docs/deploy-strapi for more information.
+
+
+Install https://market.strapi.io/plugins/strapi-plugin-import-export-entries Adds import Export Functianality
+
+Install https://market.strapi.io/plugins/@strapi-plugin-graphql Adds GraphQL
+
+Install https://market.strapi.io/plugins/strapi-plugin-website-builder Builds Sites Periodically
+
+This one seems to break it^^^
+
