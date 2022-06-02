@@ -13,6 +13,9 @@ git push origin master
 
 You will need a private key if you are using github.
 
+rename .env.example to `.env` and paste the corresponding variable from `render.com` environment variables
+
+make sure to use node v14 and run `npm install` before the environment will start
 
 Fork this repo and click the button below to deploy.
 
