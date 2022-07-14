@@ -4,7 +4,8 @@
   "info": {
     "singularName": "community",
     "pluralName": "communities",
-    "displayName": "Community"
+    "displayName": "Community",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,32 +13,41 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "icon": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "description": {
       "type": "richtext"
     },
     "website": {
-      "type": "string"
-    },
-    "email": {
-      "type": "string"
+      "type": "string",
+      "required": false
     },
     "discord": {
-      "type": "string"
+      "type": "string",
+      "regex": "https://discord.com/invite/*"
     },
     "twitter": {
-      "type": "string"
+      "type": "string",
+      "regex": "https://twitter.com/*"
+    },
+    "email": {
+      "type": "email"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project",
+      "mappedBy": "community"
     }
   }
 }
