@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_team_team_members",
+  "info": {
+    "displayName": "Team Member",
+    "icon": "user-tie",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "founder",
+        "art",
+        "tech"
+      ],
+      "required": false
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_task_join_discord_tasks",
+  "info": {
+    "displayName": "Join Discord Action",
+    "icon": "compact-disc",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "discord": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "string",
+      "default": "join our discord server",
+      "required": true
+    }
+  }
+}

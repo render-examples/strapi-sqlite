@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tasks",
+  "info": {
+    "singularName": "task",
+    "pluralName": "tasks",
+    "displayName": "Task",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "start_time": {
+      "type": "datetime",
+      "required": true
+    },
+    "end_time": {
+      "type": "datetime",
+      "required": true
+    },
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "tasks"
+    },
+    "actions": {
+      "type": "dynamiczone",
+      "components": [
+        "task.follow-twitter-task",
+        "task.invite-people-to-task",
+        "task.join-discord-task",
+        "task.met-contribution",
+        "task.turn-on-notification"
+      ]
+    },
+    "whitelist_num": {
+      "type": "integer"
+    }
+  }
+}

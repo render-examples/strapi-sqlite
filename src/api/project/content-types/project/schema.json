@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "community": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::community.community",
+      "inversedBy": "projects"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "story": {
+      "type": "richtext",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "live",
+        "future"
+      ],
+      "default": "live",
+      "required": true
+    },
+    "item_num": {
+      "type": "integer",
+      "required": true
+    },
+    "mint_price": {
+      "type": "integer"
+    },
+    "public_sale_time": {
+      "type": "datetime",
+      "required": true
+    },
+    "discord": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "injected_coins": {
+      "type": "integer"
+    },
+    "tasks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::task.task",
+      "mappedBy": "project"
+    },
+    "teams": {
+      "type": "component",
+      "repeatable": true,
+      "component": "project.team-member"
+    },
+    "roadmap": {
+      "type": "component",
+      "repeatable": true,
+      "component": "project.roadmap-item"
+    },
+    "description": {
+      "type": "text"
+    },
+    "mint_url": {
+      "type": "string"
+    },
+    "whitelist_num": {
+      "type": "integer"
+    }
+  }
+}

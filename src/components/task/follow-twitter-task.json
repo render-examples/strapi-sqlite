@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_task_follow_twitter_tasks",
+  "info": {
+    "displayName": "Follow Twitter Action",
+    "icon": "share-alt-square",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "default": "Follow us on Twitter",
+      "required": true
+    },
+    "twitter": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

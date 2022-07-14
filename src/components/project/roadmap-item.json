@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_project_roadmap_items",
+  "info": {
+    "displayName": "Roadmap Item",
+    "icon": "road",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "date",
+      "required": false
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "stutas": {
+      "type": "enumeration",
+      "enum": [
+        "DONE",
+        "UNDO"
+      ],
+      "required": true,
+      "default": "UNDO"
+    }
+  }
+}
