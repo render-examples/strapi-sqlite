@@ -37,11 +37,34 @@
         "task.invite-people-to-task",
         "task.join-discord-task",
         "task.met-contribution",
-        "task.turn-on-notification"
+        "task.turn-on-notification",
+        "task.like-tweet",
+        "task.retweet"
       ]
     },
     "whitelist_num": {
       "type": "integer"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "WHITELIST_ORIENTED",
+        "WHITELIST_LUCK_DRAW"
+      ]
     }
   }
 }

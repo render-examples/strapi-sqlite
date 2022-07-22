@@ -1,19 +1,20 @@
 {
-  "collectionName": "components_task_follow_twitter_tasks",
+  "collectionName": "components_task_follow_twitter",
   "info": {
-    "displayName": "Follow Twitter Action",
+    "displayName": "FOLLOW_TWITTER",
     "icon": "share-alt-square",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "text": {
+    "name": {
       "type": "string",
       "default": "Follow us on Twitter",
       "required": true
     },
-    "twitter": {
+    "url": {
       "type": "string",
+      "default": "https://twitter.com/intent/follow?screen_name=",
       "required": true
     }
   }

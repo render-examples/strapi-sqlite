@@ -1,12 +1,13 @@
 {
   "collectionName": "components_task_turn_on_notifications",
   "info": {
-    "displayName": "Turn on Notification",
-    "icon": "bell"
+    "displayName": "TURN_ON_NOTIFICATION",
+    "icon": "bell",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "text": {
+    "name": {
       "type": "string",
       "default": "turn on notification of this community",
       "required": true

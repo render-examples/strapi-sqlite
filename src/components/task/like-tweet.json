@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_task_like_tweets",
+  "info": {
+    "displayName": "LIKE_TWEET",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "default": "https://twitter.com/intent/like?tweet_id=",
+      "required": true
+    }
+  }
+}

@@ -89,6 +89,11 @@
     },
     "whitelist_num": {
       "type": "integer"
+    },
+    "chain_id": {
+      "type": "integer",
+      "default": 1,
+      "required": true
     }
   }
 }

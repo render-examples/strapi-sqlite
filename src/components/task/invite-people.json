@@ -1,23 +1,26 @@
 {
-  "collectionName": "components_task_invite_people_to_tasks",
+  "collectionName": "components_task_invite_people",
   "info": {
-    "displayName": "Invite People Action",
+    "displayName": "INVITE_PEOPLE",
     "icon": "street-view",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "number": {
+    "num": {
       "type": "integer",
       "max": 5,
       "required": true,
       "min": 1,
       "default": 3
     },
-    "text": {
+    "name": {
       "type": "string",
       "default": "invite people to take the task",
       "required": true
+    },
+    "url": {
+      "type": "string"
     }
   }
 }

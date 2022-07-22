@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_task_retweets",
+  "info": {
+    "displayName": "RETWEET",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "default": "https://twitter.com/intent/retweet?tweet_id=",
+      "required": true
+    }
+  }
+}

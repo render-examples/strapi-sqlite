@@ -1,20 +1,25 @@
 {
-  "collectionName": "components_task_join_discord_tasks",
+  "collectionName": "components_task_join_discord",
   "info": {
-    "displayName": "Join Discord Action",
+    "displayName": "JOIN_DISCORD",
     "icon": "compact-disc",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "discord": {
+    "server_id": {
       "type": "string",
       "required": true
     },
-    "text": {
+    "name": {
       "type": "string",
       "default": "join our discord server",
       "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "default": "https://discord.gg/"
     }
   }
 }

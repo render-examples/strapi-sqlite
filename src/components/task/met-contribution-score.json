@@ -1,18 +1,18 @@
 {
-  "collectionName": "components_task_met_contributions",
+  "collectionName": "components_task_met_contribution-score",
   "info": {
-    "displayName": "Met Contribution Score Action",
+    "displayName": "MET_CONTRIBUTION_SCORE",
     "icon": "icons",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "text": {
+    "name": {
       "type": "string",
       "default": "have contribution",
       "required": true
     },
-    "score_limit": {
+    "score": {
       "type": "integer",
       "required": true
     }
