@@ -33,10 +33,10 @@
     "actions": {
       "type": "dynamiczone",
       "components": [
-        "task.follow-twitter-task",
-        "task.invite-people-to-task",
-        "task.join-discord-task",
-        "task.met-contribution",
+        "task.follow-twitter",
+        "task.invite-people",
+        "task.join-discord",
+        "task.met-contribution-score",
         "task.turn-on-notification",
         "task.like-tweet",
         "task.retweet"

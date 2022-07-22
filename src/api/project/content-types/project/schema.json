@@ -38,19 +38,16 @@
     "status": {
       "type": "enumeration",
       "enum": [
-        "active",
-        "live",
-        "future"
+        "ACTIVE",
+        "LIVE",
+        "FUTURE"
       ],
-      "default": "live",
+      "default": "ACTIVE",
       "required": true
     },
     "item_num": {
       "type": "integer",
       "required": true
-    },
-    "mint_price": {
-      "type": "integer"
     },
     "public_sale_time": {
       "type": "datetime",
@@ -61,9 +58,6 @@
     },
     "twitter": {
       "type": "string"
-    },
-    "injected_coins": {
-      "type": "integer"
     },
     "tasks": {
       "type": "relation",
@@ -94,6 +88,14 @@
       "type": "integer",
       "default": 1,
       "required": true
+    },
+    "mint_price": {
+      "type": "string",
+      "required": true
+    },
+    "injected_coins": {
+      "type": "string",
+      "required": false
     }
   }
 }
