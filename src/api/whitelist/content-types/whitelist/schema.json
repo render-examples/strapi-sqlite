@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whitelists",
+  "info": {
+    "singularName": "whitelist",
+    "pluralName": "whitelists",
+    "displayName": "Whitelist",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mint_url": {
+      "type": "string"
+    },
+    "mint_price": {
+      "type": "string",
+      "required": true
+    },
+    "mint_max_num": {
+      "required": false,
+      "type": "integer"
+    },
+    "total_num": {
+      "type": "integer",
+      "required": true
+    },
+    "mint_start_time": {
+      "required": true,
+      "type": "datetime"
+    },
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "whitelists"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

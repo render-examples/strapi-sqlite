@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_task_rewards",
+  "info": {
+    "displayName": "Reward",
+    "icon": "wine-bottle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "whitelist": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::whitelist.whitelist"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "WHITELIST_ORIENTED",
+        "WHITELIST_LUCK_DRAW"
+      ],
+      "required": true,
+      "default": "WHITELIST_ORIENTED"
+    }
+  }
+}

@@ -11,6 +11,9 @@
       "type": "string",
       "default": "turn on notification of this community",
       "required": true
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

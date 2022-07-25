@@ -75,9 +75,6 @@
       "repeatable": true,
       "component": "project.roadmap-item"
     },
-    "description": {
-      "type": "text"
-    },
     "mint_url": {
       "type": "string"
     },
@@ -96,6 +93,16 @@
     "injected_coins": {
       "type": "string",
       "required": false
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "whitelists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::whitelist.whitelist",
+      "mappedBy": "project"
     }
   }
 }

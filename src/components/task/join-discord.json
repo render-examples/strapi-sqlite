@@ -20,6 +20,9 @@
       "type": "string",
       "required": true,
       "default": "https://discord.gg/"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

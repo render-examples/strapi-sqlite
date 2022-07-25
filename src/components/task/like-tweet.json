@@ -13,6 +13,9 @@
       "type": "string",
       "default": "https://twitter.com/intent/like?tweet_id=",
       "required": true
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

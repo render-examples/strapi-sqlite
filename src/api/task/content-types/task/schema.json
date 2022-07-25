@@ -36,10 +36,10 @@
         "task.follow-twitter",
         "task.invite-people",
         "task.join-discord",
-        "task.met-contribution-score",
-        "task.turn-on-notification",
         "task.like-tweet",
-        "task.retweet"
+        "task.met-contribution-score",
+        "task.retweet",
+        "task.turn-on-notification"
       ]
     },
     "whitelist_num": {
@@ -59,12 +59,11 @@
     "description": {
       "type": "richtext"
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "WHITELIST_ORIENTED",
-        "WHITELIST_LUCK_DRAW"
-      ]
+    "reward": {
+      "type": "component",
+      "repeatable": false,
+      "component": "task.reward",
+      "required": true
     }
   }
 }

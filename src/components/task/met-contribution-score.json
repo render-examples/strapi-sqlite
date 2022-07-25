@@ -15,6 +15,11 @@
     "score": {
       "type": "integer",
       "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "default": "community contribution means how much you have contribute, each community have different way, check the community page.",
+      "required": true
     }
   }
 }
