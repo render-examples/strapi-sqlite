@@ -12,8 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "private": true,
+      "unique": true
+    },
     "mint_url": {
       "type": "string"
+    },
+    "total_num": {
+      "type": "integer",
+      "required": true
     },
     "mint_price": {
       "type": "string",
@@ -23,22 +33,19 @@
       "required": false,
       "type": "integer"
     },
-    "total_num": {
-      "type": "integer",
-      "required": true
-    },
     "mint_start_time": {
       "required": true,
       "type": "datetime"
+    },
+    "mint_end_time": {
+      "type": "datetime",
+      "required": true
     },
     "project": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::project.project",
       "inversedBy": "whitelists"
-    },
-    "name": {
-      "type": "string"
     }
   }
 }
