@@ -19,9 +19,6 @@
       "default": "invite people to take the task",
       "required": true
     },
-    "url": {
-      "type": "string"
-    },
     "description": {
       "type": "richtext",
       "default": "copy this link and share to others",
