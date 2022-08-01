@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_task_invite_to_discords",
+  "info": {
+    "displayName": "INVITE_TO_DISCORD",
+    "icon": "people-carry",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": "invite X people to join our discord server"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "num": {
+      "type": "integer",
+      "required": true,
+      "default": 3
+    },
+    "server_id": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

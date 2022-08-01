@@ -39,7 +39,8 @@
         "task.like-tweet",
         "task.met-contribution-score",
         "task.retweet",
-        "task.turn-on-notification"
+        "task.turn-on-notification",
+        "task.invite-to-discord"
       ]
     },
     "whitelist_num": {
