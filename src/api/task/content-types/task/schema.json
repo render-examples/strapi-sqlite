@@ -16,6 +16,20 @@
       "type": "string",
       "required": true
     },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
     "start_time": {
       "type": "datetime",
       "required": true
@@ -35,30 +49,13 @@
       "components": [
         "task.follow-twitter",
         "task.invite-people",
+        "task.invite-to-discord",
         "task.join-discord",
         "task.like-tweet",
         "task.met-contribution-score",
         "task.retweet",
-        "task.turn-on-notification",
-        "task.invite-to-discord"
+        "task.turn-on-notification"
       ]
-    },
-    "whitelist_num": {
-      "type": "integer"
-    },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "description": {
-      "type": "richtext"
     },
     "reward": {
       "type": "component",

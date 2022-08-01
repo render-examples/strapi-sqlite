@@ -30,7 +30,16 @@
         "images",
         "videos"
       ]
+    },  
+    "description": {
+      "type": "richtext",
+      "required": true
     },
+    "chain_id": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    }, 
     "story": {
       "type": "richtext",
       "required": true
@@ -49,10 +58,24 @@
       "type": "integer",
       "required": true
     },
+    "whitelist_num": {
+      "type": "integer"
+    }, 
+    "mint_price": {
+      "type": "string",
+      "required": true
+    }, 
+    "injected_coins": {
+      "type": "string",
+      "required": false
+    },
     "public_sale_time": {
       "type": "datetime",
       "required": true
-    },
+    },  
+    "mint_url": {
+     "type": "string"
+   },
     "discord": {
       "type": "string"
     },
@@ -74,29 +97,6 @@
       "type": "component",
       "repeatable": true,
       "component": "project.roadmap-item"
-    },
-    "mint_url": {
-      "type": "string"
-    },
-    "whitelist_num": {
-      "type": "integer"
-    },
-    "chain_id": {
-      "type": "integer",
-      "default": 1,
-      "required": true
-    },
-    "mint_price": {
-      "type": "string",
-      "required": true
-    },
-    "injected_coins": {
-      "type": "string",
-      "required": false
-    },
-    "description": {
-      "type": "richtext",
-      "required": true
     },
     "whitelists": {
       "type": "relation",

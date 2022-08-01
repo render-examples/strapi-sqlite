@@ -7,11 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "whitelist": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::whitelist.whitelist"
-    },
     "type": {
       "type": "enumeration",
       "enum": [
@@ -20,6 +15,10 @@
       ],
       "required": true,
       "default": "WHITELIST_ORIENTED"
+    },
+    "winner_num": {
+      "type": "integer",
+      "required": true
     }
   }
 }
