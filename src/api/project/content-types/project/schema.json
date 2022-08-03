@@ -30,7 +30,7 @@
         "images",
         "videos"
       ]
-    },  
+    },
     "description": {
       "type": "richtext",
       "required": true
@@ -39,7 +39,7 @@
       "type": "integer",
       "default": 1,
       "required": true
-    }, 
+    },
     "story": {
       "type": "richtext",
       "required": true
@@ -60,11 +60,11 @@
     },
     "whitelist_num": {
       "type": "integer"
-    }, 
+    },
     "mint_price": {
       "type": "string",
       "required": true
-    }, 
+    },
     "injected_coins": {
       "type": "string",
       "required": false
@@ -72,10 +72,10 @@
     "public_sale_time": {
       "type": "datetime",
       "required": true
-    },  
+    },
     "mint_url": {
-     "type": "string"
-   },
+      "type": "string"
+    },
     "discord": {
       "type": "string"
     },

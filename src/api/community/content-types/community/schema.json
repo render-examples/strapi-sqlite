@@ -34,7 +34,7 @@
     },
     "discord": {
       "type": "string",
-      "regex": "https://discord.com/invite/*"
+      "regex": "https://*"
     },
     "twitter": {
       "type": "string",
