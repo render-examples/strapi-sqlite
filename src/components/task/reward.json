@@ -19,6 +19,11 @@
     "winner_num": {
       "type": "integer",
       "required": true
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 40,
+      "required": true
     }
   }
 }
