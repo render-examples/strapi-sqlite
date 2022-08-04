@@ -21,8 +21,7 @@
       "default": 3
     },
     "server_id": {
-      "type": "string",
-      "required": true
+      "type": "string"
     }
   }
 }

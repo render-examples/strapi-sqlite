@@ -10,13 +10,13 @@
       "type": "string",
       "required": true
     },
+    "description": {
+      "type": "richtext"
+    },
     "url": {
       "type": "string",
       "default": "https://twitter.com/intent/retweet?tweet_id=",
       "required": true
-    },
-    "description": {
-      "type": "richtext"
     }
   }
 }

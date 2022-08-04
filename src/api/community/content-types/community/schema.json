@@ -26,7 +26,8 @@
       ]
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": false
     },
     "website": {
       "type": "string",
@@ -34,14 +35,15 @@
     },
     "discord": {
       "type": "string",
-      "regex": "https://*"
+      "required": true
     },
     "twitter": {
       "type": "string",
-      "regex": "https://twitter.com/*"
+      "required": true
     },
     "email": {
-      "type": "email"
+      "type": "email",
+      "required": false
     },
     "projects": {
       "type": "relation",

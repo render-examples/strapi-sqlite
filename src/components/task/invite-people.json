@@ -7,13 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "num": {
-      "type": "integer",
-      "max": 5,
-      "required": true,
-      "min": 1,
-      "default": 3
-    },
     "name": {
       "type": "string",
       "default": "invite people to take the task",
@@ -23,6 +16,13 @@
       "type": "richtext",
       "default": "copy this link and share to others",
       "required": true
+    },
+    "num": {
+      "type": "integer",
+      "max": 5,
+      "required": true,
+      "min": 1,
+      "default": 3
     }
   }
 }

@@ -7,22 +7,24 @@
   },
   "options": {},
   "attributes": {
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "WHITELIST_ORIENTED",
-        "WHITELIST_LUCK_DRAW"
-      ],
-      "required": true,
-      "default": "WHITELIST_ORIENTED"
-    },
-    "winner_num": {
-      "type": "integer",
-      "required": true
-    },
     "name": {
       "type": "string",
       "maxLength": 40,
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["WHITELIST", "OTHER"],
+      "required": true,
+      "default": "WHITELIST"
+    },
+    "raffled": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "winner_num": {
+      "type": "integer",
       "required": true
     }
   }

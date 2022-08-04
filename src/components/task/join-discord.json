@@ -7,22 +7,20 @@
   },
   "options": {},
   "attributes": {
-    "server_id": {
-      "type": "string",
-      "required": true
-    },
     "name": {
       "type": "string",
       "default": "join our discord server",
       "required": true
     },
-    "url": {
-      "type": "string",
-      "required": true,
-      "default": "https://discord.gg/"
-    },
     "description": {
       "type": "richtext"
+    },
+    "url": {
+      "type": "string",
+      "default": "https://discord.gg/"
+    },
+    "server_id": {
+      "type": "string"
     }
   }
 }

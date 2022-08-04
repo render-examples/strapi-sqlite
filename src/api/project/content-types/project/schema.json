@@ -76,12 +76,6 @@
     "mint_url": {
       "type": "string"
     },
-    "discord": {
-      "type": "string"
-    },
-    "twitter": {
-      "type": "string"
-    },
     "tasks": {
       "type": "relation",
       "relation": "oneToMany",
