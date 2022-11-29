@@ -2,7 +2,7 @@ services:
   - type: web
     name: strapi
     env: node
-    plan: starter
+    plan: free
     buildCommand: yarn install && yarn build
     startCommand: rsync -a public/ /data/public/ && yarn start
     healthCheckPath: /_health
