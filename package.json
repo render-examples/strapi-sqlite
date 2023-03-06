@@ -11,9 +11,9 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-i18n": "4.1.7",
-    "@strapi/strapi": "4.1.7",
-    "@strapi/plugin-users-permissions": "4.1.7",
+    "@strapi/plugin-i18n": "4.7.1",
+    "@strapi/strapi": "4.7.1",
+    "@strapi/plugin-users-permissions": "4.7.1",
     "sqlite3": "^5.0.2"
   },
   "author": {
